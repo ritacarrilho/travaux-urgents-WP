@@ -1,0 +1,23 @@
+/* Slider Pagination */
+.splide__pagination {
+    .splide:not(.is-overflow) {
+        .splide__pagination {
+        display: block; 
+        }
+    }
+
+    .dot-pagination{
+        background: $nuance_1;
+        width: 12px;
+        height: 12px;
+    }  
+    .splide__pagination__page {
+        .is-active {
+            background-color: $secondaire !important;
+        }
+    }
+}
+
+.splide__list {
+    height: auto;
+}

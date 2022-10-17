@@ -1,0 +1,115 @@
+/* Margin*/
+$mobile-margin: 25px 30px;
+$tablet-margin: 30px 70px;
+$desktop-margin: 75px 200px;
+$ultra-margin: 100px 500px;
+
+/* Sections padding wrapper */
+.wrapper {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PADDING */
+.padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padding-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padding-text {
+    padding-bottom: 15px;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+/* POSITION */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+/* DISPLAY */
+.display-flex {
+    display: flex;
+}
+
+.display-block {
+    display: inline-block;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-center {
+    align-items: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.obj-fit {
+    object-fit: cover;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+/* SIZE */
+.width-100 {
+    width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+/* TEXT*/
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}

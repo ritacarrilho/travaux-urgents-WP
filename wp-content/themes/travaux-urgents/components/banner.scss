@@ -1,0 +1,24 @@
+/* BANNER */
+.banner-section {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/backgrounds/actualites_banner.png");
+    background-position: center;
+    margin-top: 46px;
+
+    .banner-title {
+        color: $nuance_1;
+        font-size: 35px;
+    }
+}
+
+#banner-prestations {
+    background-image: url("img/backgrounds/prestations_banner.png");
+}
+
+#banner-contacts {
+    background-image: url("img/backgrounds/nous_contacter.png");
+
+}

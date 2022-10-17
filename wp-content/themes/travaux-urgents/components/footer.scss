@@ -1,0 +1,58 @@
+/* FOOTER */ 
+footer {
+    #footer-coordinates {
+        background: radial-gradient(46.78% 341.69% at 52.66% 43.5%, #1C3323 0%, #222222 100%);
+        
+        .coordinates-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .footer-logo-container {
+                .footer-logo {
+                    max-width: 200px;
+                }
+            }
+        }
+        .footer-contacts {
+            .li-line {
+                display: none;
+            }
+            .contact-flex {
+                position: relative;
+            }
+        }
+    }
+
+    .footer-menu {
+        .wrapper {
+            #menu-pied-de-page {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding: 0px;
+
+                .li-line {
+                    content: "";
+                    width: 89px;
+                    height: 1px;
+                    background-color: $vert_2;
+                }
+            }
+        }
+    }
+
+    .copyrights-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        p {
+            text-align: center;
+        }
+    }
+}

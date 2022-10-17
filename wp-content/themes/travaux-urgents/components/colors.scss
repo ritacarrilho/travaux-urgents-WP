@@ -1,0 +1,63 @@
+$dark: #222222;
+$nuance_3: #979797;
+$nuance_2: #EAECE8;
+$nuance_1:#FCFCFC;
+$nuance_clair_vert: #F1FDBE;
+$secondaire: #A2C118;
+$vert_2: #DCDB22;
+$principale: #669A3B;
+$nuance-33: #DCDFDA;
+// $gradient: linear-gradient(0deg, #669A3B 7.89%, #BDDD32 103.42%);
+
+.main-green {
+    color: $principale;
+}
+
+.light-green {
+    color: $vert-2;
+}
+
+.white {
+    color: $nuance-1;
+}
+
+.dark {
+    color: $dark;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.bg-ligth {
+    background-color: $nuance_2;
+}
+
+.bg-green {
+    background-color: $principale;
+}
+
+.bg-medium {
+    background-color: $nuance-33;
+}
+
+.bg-white {
+    background-color: $nuance_1;
+}
+
+.border-box {
+    box-shadow: 1px -1px 11px 5px #2222221a;
+}
+
+a {
+    color: $nuance_1;
+}
+
+.img-hover {
+    &:hover {
+        img {
+            filter: opacity(0.5) drop-shadow(0 0 0 green);
+            transition: ease-in-out 0.3s;
+        }
+    }    
+}

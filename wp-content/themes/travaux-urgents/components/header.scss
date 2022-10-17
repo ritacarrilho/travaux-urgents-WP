@@ -1,0 +1,235 @@
+/* HEADER */
+header {
+    font-size: $body-size;
+    min-height: 70px;
+    background: radial-gradient(46.78% 341.69% at 52.66% 43.5%, #1C3323 0%, #222222 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    .nav-wrapper {
+        #nav-bar { 
+            .mobile-ul-logo {
+                position: absolute;
+                z-index: 50;
+                left: calc(50% - 82px);
+                transition: all .6s;
+                top: 80px;
+
+                #logo-mobile {
+                    max-width: 177px;
+                }
+            }
+
+            #close-menu-btn {
+                position: absolute;
+                width: 41px;
+                height: 32px;
+                background: none;
+                top: 40px;
+                border: none;
+                cursor: pointer;
+                left: 80%;
+                z-index: 50;
+                transition: all .6s;
+
+
+                .close-menu-btn-el {
+                    background-color: $secondaire;
+                    height: 3px;
+                    width: 40px;
+                    position: absolute;
+
+                    &:first-of-type {
+                        transform: rotate(40deg);
+                    }
+
+                    &:last-of-type {
+                        transform: rotate(-40deg);
+                    }
+                }
+            }
+                
+            .menu-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 180px 0 20% 0;
+                background: $dark;
+                height: 100vh;
+                width: 100%;
+                position: fixed;
+                right: 0;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                transition: all .6s;
+
+                .menu-item {
+                    position: relative;
+                    text-align: center;
+
+                    a {
+                        font-size: 25px;
+                    }
+                }
+                .menu-item-has-children { 
+                    .sub-menu {
+                        margin-top: 13px;
+                        text-align: center;
+                        gap: 8px;
+                        padding: 15px 15px 15px 15px;
+                        top: 0;
+                        z-index: 200;
+                        display: flex;
+                        background: #222222;
+                        flex-direction: column;
+                        border-top: 1px solid #A2C118;
+                        border-bottom: 1px solid #A2C118;
+                        li {
+                            a {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        .wrapper-contacts {
+            display: none;
+        }
+
+        .contact-btn-wrapper {
+            display: none;
+        }
+
+        .logo-mobile-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+
+            .header-mobile-contact {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                align-items: center;
+                padding-top: 23px;
+            }
+
+            .main-menu {
+                position: absolute;
+                top: -26px;
+                left: -15px;
+
+                #menu-btn {
+                    display: flex;
+                    padding: 15px;
+                    width: 70px;
+                    background-color: $dark;
+                    filter: opacity(80%);
+                    border: none;
+                    position: fixed;
+                    left: 0;
+                    height: 70px;
+                    top: 0;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    span {
+                        background-color: $secondaire;
+                        transition: transform 800ms;
+                        height: 3px;
+                        width: 35px;
+                        position: absolute;
+                                            
+                        &:first-of-type {
+                            width: 23px;
+                            right: 15px;
+                            top: 16px;
+                        }
+
+                        &:last-of-type {
+                            width: 21px;
+                            bottom: 16px;
+                            width: 21px;
+                        }
+                    }
+                }
+            }
+
+            /* Logo */
+            .header-icon {
+                width: 45px;
+                height: auto;
+            }
+        
+            /* Menu Burger */
+            #menu-burger {
+                width: 35px;
+            }
+        }
+    }
+    
+    /* Header Btn */
+    .contact-btn-wrapper{
+        display: flex;
+        justify-content: center;
+    
+        .header-button {
+            align-self: center;
+            text-align: center;
+    
+            .contactez-nous-span {
+                display: block;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* Header and Footer Contacts */
+.home-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+
+    .contact-flex {
+        a {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 4px;
+
+            .header-contacts-flex {
+                gap: 8px;
+            }
+        }
+        
+        /* Header Contacts Icons */
+        img {
+            width: 12px;
+        }
+    }
+}
+
+/* Submenu */
+.submenu-wrapper {
+    padding: 20px 0 15px 0;
+}
