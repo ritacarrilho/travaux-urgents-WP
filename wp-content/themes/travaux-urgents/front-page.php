@@ -55,7 +55,7 @@ get_header(); ?> <!-- get header -->
                         if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
                         $icon = get_field('article_icon');
                         $title = get_field('article_section_titre');
-?>
+		?>
                         <div class="services-card btn-background btn-shadow splide__slide">
                             <a href="<?php the_permalink() ?>">
 								<img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_url($icon['alt']); ?>">
@@ -70,7 +70,7 @@ get_header(); ?> <!-- get header -->
 			</div>
 		</section>
 
-	<!-- COMPANY INFO -->
+		<!-- COMPANY INFO -->
 		<section id="company-home" class="bg-dark position-relative">
 
 			<img src="<?php bloginfo('template_url'); ?>./img/icons/horizontal-liine.svg" alt="Background Wave" class="hr-line position-absolute">
@@ -101,7 +101,7 @@ get_header(); ?> <!-- get header -->
 
 		</section>
 		
-	<!-- DERNIERES ACTUALITES -->
+		<!-- DERNIERES ACTUALITES -->
 		<section id="actuality-home" class="actuality-home text-center padding">
 			<h2 class="h2-style wrapper">
 				<span class="dar">
@@ -115,21 +115,21 @@ get_header(); ?> <!-- get header -->
 				</span>
 			</h2>
 			<div class="actuality-cards-wrapper wrapper">
-<?php 	
-		// 1. On définit les arguments pour définir ce que l'on souhaite récupérer
+		<?php 	
+		// request arguments
 			$args = array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
 			);
 
-			// 2. On exécute la WP Query
+			// WP Query execution
 			$my_query = new WP_Query( $args );
 
-			// 3. On lance la boucle !
+			// WP loop
 			if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
-			$image_top = get_field('image_top');
-			$content = get_field('contenu_top');
-?>
+				$image_top = get_field('image_top');
+				$content = get_field('contenu_top');
+		?>
 				<div class="actuality-card-div img-hover bg-white border-box">
 					<img src="<?php echo esc_url($image_top['url']); ?>" alt="Titre actualité 1" class="actuality-card-img">
 					<div class="actuality-cards-content">
@@ -139,12 +139,12 @@ get_header(); ?> <!-- get header -->
 						<a href="<?php echo get_permalink(); ?>" class="intro-btn btn button-style btn-background btn-shadow"><?php the_field('btn_lire_plus'); ?></a>
 					</div>
 				</div>	
-<?php 
+		<?php 
 			endwhile; endif;
 
-			// 4. On réinitialise à la requête principale (important)
+			// reboot main request (important)
 			wp_reset_postdata();
-?>
+		?>
 			</div>
 			<a href="<?php echo site_url('/actualites');  ?>" class="company-btn btn btn-background button-style btn-shadow"><?php the_field('actualites_btn_contenu'); ?></a>
 		</section>
